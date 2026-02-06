@@ -33,7 +33,7 @@ export function ServiceCard({ title, description, icon: Icon, delay = 0 }: Servi
           {description}
         </p>
 
-        <ScrollLink to="pricing" smooth={true} duration={800} offset={-80} className="cursor-pointer">
+        <ScrollLink to="book-now" smooth={true} duration={800} offset={-80} className="cursor-pointer">
           <div className="flex items-center text-sm font-bold uppercase tracking-wider text-white group-hover:text-primary transition-colors">
             View Plans <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </div>

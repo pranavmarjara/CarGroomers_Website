@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Check, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link as ScrollLink } from "react-scroll";
 
 interface PricingItem {
   name: string;
@@ -62,19 +63,18 @@ export function PricingCard({ title, items, featured = false }: PricingCardProps
       </div>
 
       <div className="p-8 pt-0 mt-auto">
-        <Button 
-          asChild 
-          className={`w-full h-12 text-lg uppercase tracking-wider font-bold shadow-lg ${
-            featured 
-              ? 'bg-primary hover:bg-primary/90 text-white' 
-              : 'bg-white/10 hover:bg-white/20 text-white'
-          }`}
-        >
-          <a href="tel:+17806553757">
+        <ScrollLink to="book-now" smooth={true} duration={800} offset={-80}>
+          <Button 
+            className={`w-full h-12 text-lg uppercase tracking-wider font-bold shadow-lg ${
+              featured 
+                ? 'bg-primary hover:bg-primary/90 text-white' 
+                : 'bg-white/10 hover:bg-white/20 text-white'
+            }`}
+          >
             <PhoneCall className="mr-2 w-5 h-5" />
             Book Now
-          </a>
-        </Button>
+          </Button>
+        </ScrollLink>
       </div>
     </motion.div>
   );

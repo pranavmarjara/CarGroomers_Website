@@ -21,6 +21,7 @@ export function Navbar() {
     { name: "Pricing", to: "pricing" },
     { name: "About", to: "about" },
     { name: "Contact", to: "contact" },
+    { name: "Book Now", to: "book-now" },
   ];
 
   return (
@@ -52,12 +53,12 @@ export function Navbar() {
               {link.name}
             </ScrollLink>
           ))}
-          <Button asChild className="bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-wider shadow-lg shadow-primary/20">
-            <a href="tel:+17806553757">
+          <ScrollLink to="book-now" smooth={true} duration={800} offset={-80}>
+            <Button className="bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-wider shadow-lg shadow-primary/20">
               <Phone className="w-4 h-4 mr-2" />
               Call Now
-            </a>
-          </Button>
+            </Button>
+          </ScrollLink>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -90,12 +91,12 @@ export function Navbar() {
                   {link.name}
                 </ScrollLink>
               ))}
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-wider mt-8">
-                <a href="tel:+17806553757">
+              <ScrollLink to="book-now" smooth={true} duration={800} offset={-80} onClick={() => setIsOpen(false)}>
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-wider mt-8">
                   <Phone className="w-5 h-5 mr-2" />
-                  (780) 655-3757
-                </a>
-              </Button>
+                  Book Now
+                </Button>
+              </ScrollLink>
             </motion.div>
           )}
         </AnimatePresence>

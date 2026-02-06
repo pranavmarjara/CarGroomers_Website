@@ -3,6 +3,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { PricingCard } from "@/components/PricingCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ContactForm } from "@/components/ContactForm";
+import { BookingSection } from "@/components/BookingSection";
 import { Button } from "@/components/ui/button";
 import { Shield, Sparkles, Car, Layers, MapPin, Mail, Phone, Calendar } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
@@ -46,13 +47,13 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
-              <Button asChild size="lg" className="w-full md:w-auto min-w-[200px] h-14 text-lg font-bold uppercase tracking-wider bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 border border-primary">
-                <a href="tel:+17806553757">
+              <ScrollLink to="book-now" smooth={true} duration={800} offset={-80}>
+                <Button size="lg" className="w-full md:w-auto min-w-[200px] h-14 text-lg font-bold uppercase tracking-wider bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 border border-primary">
                   <Phone className="mr-2 w-5 h-5" />
                   Call Now
-                </a>
-              </Button>
-              <ScrollLink to="contact" smooth={true} duration={800} offset={-80}>
+                </Button>
+              </ScrollLink>
+              <ScrollLink to="book-now" smooth={true} duration={800} offset={-80}>
                 <Button size="lg" variant="outline" className="w-full md:w-auto min-w-[200px] h-14 text-lg font-bold uppercase tracking-wider bg-transparent border-2 border-white/20 text-white hover:bg-white hover:text-black hover:border-white backdrop-blur-sm">
                   <Calendar className="mr-2 w-5 h-5" />
                   Get Quote
@@ -331,6 +332,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <BookingSection />
 
       {/* FOOTER */}
       <footer className="py-8 bg-black border-t border-white/10 text-center">
