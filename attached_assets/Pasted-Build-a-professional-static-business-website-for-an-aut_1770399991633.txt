@@ -1,0 +1,200 @@
+Build a professional static business website for an automotive detailing company.
+
+Business Details
+
+Company Name: CarGroomers
+Accent Color: Deep Red + subtle Gold highlights
+Theme Colors: Black, Smoke Grey, Metallic Grey (luxury automotive style)
+
+Address:
+132 Rue Montalet
+Beaumont, Canada
+
+Email:
+cargroomers1@gmail.com
+
+Phone Numbers (click to call buttons required):
++1 (780) 655-3757
++1 (780) 818-0211
+
+Design Requirements
+
+Create a modern luxury automotive website similar to premium car detailing brands.
+
+Style:
+
+Dark luxury UI
+
+Glossy metallic feel
+
+Smooth hover animations
+
+Soft shadows
+
+Red accent lines & buttons
+
+Gold divider highlights (minimal use)
+
+Fully responsive mobile design
+
+Typography:
+
+Bold strong headings
+
+Clean readable body text
+
+Slight spacing between letters for premium look
+
+Pages / Sections
+1. Hero Section
+
+Full width banner
+Big logo text: CarGroomers (red accent)
+Tagline:
+"Premium Automotive Protection & Detailing"
+
+CTA buttons:
+
+Call Now
+
+Get Quote
+
+Buttons must dial the numbers provided (tel: links)
+
+2. Services Section
+
+Create 4 main service cards:
+
+Window Tint
+
+Paint Protection Film (PPF)
+
+Ceramic Coating
+
+Car Detailing
+
+Each card:
+Icon
+Short description
+"View Plans" button (scroll to pricing section)
+
+3. Pricing Plans Section
+
+Create pricing cards with clean layout.
+
+Combo Plan (Featured)
+
+Premium Full Protection Package
+
+Include:
+
+Tint
+
+Partial PPF
+
+Ceramic
+
+Full Detail
+
+Price: $999 (placeholder)
+
+CTA: "Book Now" → phone call buttons
+
+Window Tint (4 Plans)
+
+Basic Tint — $199
+Standard Tint — $299
+Premium Tint — $399
+Ultimate Tint — $499
+
+PPF (4 Plans)
+
+Partial Front — $499
+Full Front — $899
+Track Package — $1299
+Full Body — $2499
+
+Ceramic Coating (4 Plans)
+
+1 Year — $299
+3 Year — $599
+5 Year — $899
+Lifetime — $1299
+
+Car Detailing (4 Plans)
+
+Interior — $149
+Exterior — $149
+Full Detail — $249
+Showroom Detail — $399
+
+Every plan must include a Call To Book button that calls the phone numbers.
+
+4. Future Services Placeholder
+
+Create an empty section titled:
+"More Services Coming Soon"
+
+Leave clean card placeholders so I can add more later.
+
+5. About Section
+
+Small paragraph about professional automotive care and protection.
+
+6. Contact Section
+
+Display:
+Address
+Email (click to mail)
+Both phone numbers
+
+Add a simple contact form UI (no backend — just design)
+
+Technical Requirements
+
+Only HTML + CSS + small JavaScript
+
+No database
+
+No backend
+
+Easy to maintain files:
+
+index.html
+
+style.css
+
+script.js
+
+Phone buttons must use:
+tel:+17806553757
+tel:+17808180211
+
+Email button:
+mailto:cargroomers1@gmail.com
+
+Extra Features
+
+Add:
+
+Smooth scroll
+
+Sticky navbar
+
+Mobile hamburger menu
+
+Hover glow effects on buttons
+
+Subtle car-style gradients
+
+SEO meta tags
+
+Footer with copyright
+
+Visual Goal
+
+The website should look like a premium luxury auto detailing brand — similar to high-end detailing studios, not a basic local shop.
+
+Make it clean, modern, and business-ready for real deployment.
+
+End of Prompt
