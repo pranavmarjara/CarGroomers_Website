@@ -65,7 +65,7 @@ export function PricingCard({ title, items, featured = false }: PricingCardProps
       <div className="p-8 pt-0 mt-auto">
         <ScrollLink to="book-now" smooth={true} duration={800} offset={-80}>
           <Button 
-            className={`w-full h-12 text-lg uppercase tracking-wider font-bold shadow-lg ${
+            className={`w-full h-12 text-lg uppercase tracking-wider font-bold shadow-lg hover-gold-shimmer ${
               featured 
                 ? 'bg-primary hover:bg-primary/90 text-white' 
                 : 'bg-white/10 hover:bg-white/20 text-white'

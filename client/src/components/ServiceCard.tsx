@@ -16,7 +16,7 @@ export function ServiceCard({ title, description, icon: Icon, delay = 0 }: Servi
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      className="group relative p-8 rounded-2xl bg-card border border-white/5 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden"
+      className="group relative p-8 rounded-2xl bg-card border border-white/5 hover:border-accent/30 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       

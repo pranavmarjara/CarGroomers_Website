@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20">
+      <section id="hero" className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
@@ -47,14 +47,14 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
-              <ScrollLink to="book-now" smooth={true} duration={800} offset={-80}>
-                <Button size="lg" className="w-full md:w-auto min-w-[200px] h-14 text-lg font-bold uppercase tracking-wider bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 border border-primary">
+              <ScrollLink to="book-now" smooth={true} duration={800} offset={-80} className="w-full md:w-auto">
+                <Button size="lg" className="w-full md:w-auto min-w-[200px] h-[48px] md:h-14 text-lg font-bold uppercase tracking-wider bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 border border-primary hover-gold-shimmer">
                   <Phone className="mr-2 w-5 h-5" />
                   Call Now
                 </Button>
               </ScrollLink>
-              <ScrollLink to="book-now" smooth={true} duration={800} offset={-80}>
-                <Button size="lg" variant="outline" className="w-full md:w-auto min-w-[200px] h-14 text-lg font-bold uppercase tracking-wider bg-transparent border-2 border-white/20 text-white hover:bg-white hover:text-black hover:border-white backdrop-blur-sm">
+              <ScrollLink to="book-now" smooth={true} duration={800} offset={-80} className="w-full md:w-auto">
+                <Button size="lg" variant="outline" className="w-full md:w-auto min-w-[200px] h-[48px] md:h-14 text-lg font-bold uppercase tracking-wider bg-transparent border-2 border-white/20 text-white hover:bg-white hover:text-black hover:border-white backdrop-blur-sm">
                   <Calendar className="mr-2 w-5 h-5" />
                   Get Quote
                 </Button>
@@ -75,7 +75,8 @@ export default function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section id="services" className="py-24 bg-background relative overflow-hidden">
+      <section id="services" className="py-16 md:py-24 bg-background relative overflow-hidden">
+        <div className="gold-separator absolute top-0 left-0" />
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
 
@@ -115,7 +116,8 @@ export default function Home() {
       </section>
 
       {/* PRICING SECTION */}
-      <section id="pricing" className="py-24 bg-card/30 relative border-y border-white/5">
+      <section id="pricing" className="py-16 md:py-24 bg-card/30 relative border-y border-white/5">
+        <div className="gold-separator absolute top-0 left-0" />
         <div className="container mx-auto px-4">
           <SectionHeader 
             title="Pricing Packages" 
@@ -206,7 +208,8 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION */}
-      <section id="about" className="py-24 bg-background relative">
+      <section id="about" className="py-16 md:py-24 bg-background relative">
+        <div className="gold-separator absolute top-0 left-0" />
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -262,7 +265,8 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="py-24 bg-card border-t border-white/5">
+      <section id="contact" className="py-16 md:py-24 bg-card border-t border-white/5">
+        <div className="gold-separator absolute top-0 left-0" />
         <div className="container mx-auto px-4">
           <SectionHeader title="Get In Touch" subtitle="Ready to transform your vehicle? Contact us today." />
 
@@ -334,6 +338,16 @@ export default function Home() {
       </section>
 
       <BookingSection />
+      
+      {/* Mobile Sticky CTA Bar */}
+      <div className="fixed bottom-0 left-0 w-full bg-background/90 backdrop-blur-md border-t border-primary/20 p-4 z-40 flex gap-4 md:hidden">
+        <ScrollLink to="book-now" smooth={true} duration={800} offset={-80} className="flex-1">
+          <Button className="w-full h-12 bg-primary text-white font-bold uppercase tracking-wider">
+            <Phone className="mr-2 h-5 w-5" />
+            Book Now
+          </Button>
+        </ScrollLink>
+      </div>
 
       {/* FOOTER */}
       <footer className="py-8 bg-black border-t border-white/10 text-center">

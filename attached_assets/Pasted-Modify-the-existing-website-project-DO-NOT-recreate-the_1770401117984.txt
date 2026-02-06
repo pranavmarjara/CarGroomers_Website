@@ -1,0 +1,162 @@
+Modify the existing website project — DO NOT recreate the project and DO NOT delete existing content unless necessary.
+
+Improve and refactor the current code so it becomes production-ready, mobile-first, and deployable on GitHub Pages and Netlify.
+
+Keep the existing design and structure but enhance responsiveness, reliability, and polish.
+
+1. Mobile-First Optimization (Top Priority)
+
+Convert the entire layout to mobile-first CSS.
+
+Rules:
+
+Base styles must target screens under 480px first
+
+Use media queries only for tablets and desktops (min-width)
+
+Remove horizontal scrolling everywhere
+
+All cards stack vertically on mobile
+
+Minimum tap target size: 48px height
+
+Buttons full width on phones
+
+Navbar becomes hamburger menu under 768px
+
+Sticky bottom "Call / Book" bar for mobile users
+
+Fix spacing issues:
+
+Consistent padding system (16px / 24px / 32px scale)
+
+Prevent text overflow
+
+Ensure pricing cards don't overflow screen
+
+2. Booking Section Reliability Fix
+
+Ensure ALL:
+Book Now
+Get Quote
+Plan Buttons
+Call Now buttons
+
+scroll smoothly to:
+#book-now
+
+Never open dialer directly except inside the booking cards.
+
+Fix scrolling using:
+scrollIntoView({ behavior: "smooth" })
+
+3. Copy Number System (Make Robust)
+
+Improve clipboard feature:
+
+Requirements:
+
+Works on mobile and desktop
+
+Icon 📋 changes to ✔ for 1.5s
+
+Add fallback if clipboard permission denied
+
+Add toast notification "Number Copied"
+
+Double click number → copy (desktop)
+Tap call button → call (mobile)
+
+4. Hosting Compatibility (Important)
+
+Prepare project for GitHub Pages & Netlify:
+
+Remove absolute paths
+
+Use relative paths only
+
+No localhost references
+
+No server dependencies
+
+No unused files
+
+Add proper favicon reference
+
+Add meta viewport tag
+
+Add SEO meta description
+
+Make sure site works when opened directly as index.html
+
+5. Performance Cleanup
+
+Optimize:
+
+Remove duplicate CSS
+
+Merge repetitive classes
+
+Minimize JavaScript usage
+
+Avoid inline styles
+
+Lazy load images
+
+Reduce animation lag on mobile
+
+6. Subtle Gold Luxury Accents (Visual Upgrade)
+
+Add VERY subtle metallic gold accents:
+
+Where to apply:
+
+Thin separators between sections
+
+Hover shimmer on buttons
+
+Card border highlight on hover
+
+Underline animation in navbar
+
+Gold must look metallic:
+Use gradient gold, not yellow
+Low opacity only
+No glowing neon gold
+
+Example feel: luxury car badge reflection
+
+7. Code Maintainability
+
+Refactor code to be clean:
+
+Organize CSS sections (navbar, hero, services, pricing, booking, footer)
+
+Group JS functions
+
+Add clear comments
+
+Keep files limited to:
+index.html
+style.css
+script.js
+
+8. Final Verification
+
+Ensure:
+
+Works perfectly on phone first
+
+Smooth scrolling works
+
+Copy button works everywhere
+
+All buttons functional
+
+No console errors
+
+Ready for direct deployment
+
+Do NOT redesign the site — only improve and polish.
+
+End Prompt

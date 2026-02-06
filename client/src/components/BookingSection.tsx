@@ -14,7 +14,17 @@ function PhoneCard({ number }: PhoneCardProps) {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(number);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(number);
+      } else {
+        // Fallback for older browsers
+        const textArea = document.createElement("textarea");
+        textArea.value = number;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+      }
       setCopied(true);
       toast({
         title: "Number Copied",
@@ -46,7 +56,7 @@ function PhoneCard({ number }: PhoneCardProps) {
       className="relative group overflow-visible"
     >
       <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent/50 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
-      <div className="relative bg-card border border-white/10 rounded-xl p-6 flex flex-col items-center gap-6">
+      <div className="relative bg-card border border-white/10 rounded-xl p-6 flex flex-col items-center gap-6 group-hover:border-accent/30 transition-colors">
         <div 
           className="text-2xl md:text-3xl font-black font-display tracking-tight text-white cursor-pointer select-all md:select-auto"
           onClick={() => {

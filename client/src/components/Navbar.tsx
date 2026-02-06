@@ -48,7 +48,7 @@ export function Navbar() {
               smooth={true}
               duration={800}
               offset={-80}
-              className="text-sm font-bold uppercase tracking-widest text-muted-foreground hover:text-white cursor-pointer transition-colors"
+              className="text-sm font-bold uppercase tracking-widest text-muted-foreground hover:text-white cursor-pointer transition-colors nav-underline"
             >
               {link.name}
             </ScrollLink>
